@@ -2,5 +2,5 @@
 repo for my website
 
 <p align="center">
-    ![demo gif](public/assets/img/website-demo.gif)
+    <img src="public/assets/img/website-demo.gif" alt="demo gif"/>
 </p>
