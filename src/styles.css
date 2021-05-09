@@ -1,0 +1,236 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #21242b;
+    --red-dark: #be5046;
+    --red: #ff6e7a;
+    /*--orange-dark:;
+    --orange:;*/
+    --yellow-dark: #d19a66;
+    --yellow: #ffd587;
+    /*--green-dark:;*/
+    --green: #c0fa96;
+    --cyan: #66deed;
+    /*--blue-dark:;*/
+    --blue: #6ebeff;
+    /*--indigo-dark:;
+    --indigo:;*/
+    --violet: #e387ff;
+    --violet-dark: #de82fa;
+    --white: #dfe5f2;
+    --text-color: var(--white);
+    --background-color: var(--black);
+    --logo-github: var(--white);
+    --logo-instagram: var(--white);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --black: #383a42;
+    --red-dark: #be5046;
+    --red: #e45649;
+    /*--orange-dark:;
+    --orange:;*/
+    --yellow-dark: #d19a66;
+    --yellow: #c18401;
+    /*--green-dark:;*/
+    --green: #50a14f;
+    --cyan: #0997b3;
+    /*--blue-dark:;*/
+    --blue: #0184bc;
+    /*--indigo-dark:;
+    --indigo:;*/
+    --violet-dark: #6a0068;
+    --violet: #a626a4;
+    --white: #fafafa;
+    --text-color: var(--black);
+    --background-color: var(--white);
+    --logo-github: var(--black);
+    --logo-instagram: #0a0a08;
+  }
+}
+
+:root {
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  --logo-width: 48px;
+}
+
+* {
+  padding: 0;
+  color: var(--text-color);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: var(--background-color);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+body * {
+  flex: 0 1 auto;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text-color);
+}
+
+div.front-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+div.personal-info {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.personal-info > * {
+  width: 100%;
+  margin: 2.5% 0;
+  display: flex;
+  font-family: var(--font-mono);
+}
+
+div.personal-info figure {
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.personal-info figure > * {
+  margin: 1% 0;
+}
+
+div.personal-info figure object {
+  width: 100%;
+  max-width: 90vw;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+div.personal-info figure figcaption {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 3rem;
+  background-color: rgba(33,36,43, 0.8);
+  border-radius: 0.5rem;
+}
+
+div.personal-info div.link-list {
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+div.personal-info div.link-list div.link-item {
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 20%;
+  font-weight: bold;
+  background-color: rgba(33,36,43, 0.5);
+  border-radius: 0.5rem;
+}
+
+div.personal-info div.link-list div.link-item object {
+  height: auto;
+  width: 85%;
+  margin: 1rem;
+}
+
+div.front-page #svg-bg-container {
+  position: absolute;
+  contain: strict;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+#logo-instagram {
+  fill: var(--logo-instagram);
+}
+#logo-github {
+  fill: var(--logo-github);
+}
+
+#logo-linkedin {
+  fill: #0a66c2;
+}
+
+svg line {
+  box-sizing: content-box;
+  stroke: var(--text-color);
+  stroke-width: 4;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 0.5rem var(--text-color));
+}
+
+@media (min-aspect-ratio: 1/1) {
+  div.front-page {
+    justify-content: flex-start;
+  }
+  div.personal-info {
+    min-width: 19rem;
+    width: 35%;
+    margin: 0 auto 0 2vw;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  div.front-page {
+    justify-content: center;
+  }
+  div.personal-info {
+    width: 96%;
+    margin: auto;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
