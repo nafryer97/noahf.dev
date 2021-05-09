@@ -72,7 +72,7 @@ function SVGMatrixGenerator() {
         lim,
         len,
         theta + dtheta,
-        Math.PI / randomNumber(4,6),
+        dtheta,
         Math.cos(theta + dtheta),
         Math.sin(theta + dtheta),
         theta,
@@ -87,7 +87,7 @@ function SVGMatrixGenerator() {
         lim,
         len,
         theta - dtheta,
-        Math.PI / randomNumber(4,6),
+        dtheta,
         Math.cos(theta - dtheta),
         Math.sin(theta - dtheta),
         theta,
@@ -114,7 +114,7 @@ function SVGMatrixGenerator() {
       Math.sin(theta),
       0,
       initialScale,
-      0.6,
+      0.67,
       0,
       0
     );
@@ -133,7 +133,7 @@ function SVGMatrixGenerator() {
   self.onmessage = function (e) {
     const maxLevel = e.data[0];
     const branchLen = e.data[1];
-    const initialScale = 1.1;
+    const initialScale = 2.5;
     const theta = Math.PI / randomNumber(4, 6);
     const dTheta = Math.PI / randomNumber(4, 6);
     const matrices = [];

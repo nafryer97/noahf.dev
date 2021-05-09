@@ -1,5 +1,6 @@
-@media (prefers-color-scheme: dark) {
-  :root {
+:root {
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
     --black: #21242b;
     --red-dark: #be5046;
     --red: #ff6e7a;
@@ -17,43 +18,22 @@
     --violet: #e387ff;
     --violet-dark: #de82fa;
     --white: #dfe5f2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
     --text-color: var(--white);
     --background-color: var(--black);
-    --logo-github: var(--white);
-    --logo-instagram: var(--white);
+    --translucent-background: rgba(33,36,43, 0.5);
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --black: #383a42;
-    --red-dark: #be5046;
-    --red: #e45649;
-    /*--orange-dark:;
-    --orange:;*/
-    --yellow-dark: #d19a66;
-    --yellow: #c18401;
-    /*--green-dark:;*/
-    --green: #50a14f;
-    --cyan: #0997b3;
-    /*--blue-dark:;*/
-    --blue: #0184bc;
-    /*--indigo-dark:;
-    --indigo:;*/
-    --violet-dark: #6a0068;
-    --violet: #a626a4;
-    --white: #fafafa;
     --text-color: var(--black);
     --background-color: var(--white);
-    --logo-github: var(--black);
-    --logo-instagram: #0a0a08;
+    --translucent-background: rgba(223, 229, 242, 0.5);
   }
-}
-
-:root {
-  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
-  --logo-width: 48px;
 }
 
 * {
@@ -146,7 +126,7 @@ div.personal-info figure figcaption {
   justify-content: center;
   align-items: baseline;
   font-size: 3rem;
-  background-color: rgba(33,36,43, 0.8);
+  background-color: var(--translucent-background);
   border-radius: 0.5rem;
 }
 
@@ -166,7 +146,7 @@ div.personal-info div.link-list div.link-item {
   margin: auto;
   width: 20%;
   font-weight: bold;
-  background-color: rgba(33,36,43, 0.5);
+  background-color: var(--translucent-background);
   border-radius: 0.5rem;
 }
 

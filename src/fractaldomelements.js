@@ -3,7 +3,7 @@ import anime from 'animejs/lib/anime.es.js';
 const svgns = 'http://www.w3.org/2000/svg';
 const scrWidth = window.screen.width;
 const scrHeight = window.screen.height;
-const branchLen = scrHeight / 3.9;
+const branchLen = scrHeight / 10;
 let branchCount = 1;
 
 function createAndAnimate(svgGroup, matrices, docFrag) {
