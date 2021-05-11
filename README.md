@@ -13,3 +13,6 @@
 - [Father's Day Tree](https://github.com/canmom/fathersdaytree)
 - [Lautaro
     Lobo](https://dev.to/lautarolobo/use-javascript-and-html5-to-code-a-fractal-tree-2n69)
+
+### [Jake Archibald](https://github.com/jakearchibald) on the browser event loop:
+[![a youtube video of Jake Archibald speaking about the browser event loop](jake-archibald-in-the-loop.png)](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
