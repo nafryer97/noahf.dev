@@ -66,7 +66,7 @@ function initElementsFromWorkerData(matrices) {
   const treeGroup = document.createElementNS(svgns, 'g');
   svg.setAttributeNS(null, 'id', 'svg-bg-container');
   svg.setAttributeNS(null, 'viewbox', `0 0 ${scrWidth} ${scrHeight}`);
-  svg.setAttributeNS(null, 'preserveaspectratio', 'xMinYMin slice');
+  svg.setAttributeNS(null, 'preserveaspectratio', 'xMinYMin meet');
   treeGroup.setAttributeNS(null, 'id', 'treeGroup');
   treeGroup.setAttributeNS(
     null,

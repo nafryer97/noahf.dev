@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: var(--light-background);
+    --background-color: var(--dark-background);
+    --translucent-background: rgba(9, 9, 11, 0.5);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: var(--dark-background);
+    --background-color: var(--light-background);
+    --translucent-background: rgba(241, 243, 249, 0.5);
+  }
+}

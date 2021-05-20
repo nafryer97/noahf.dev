@@ -1,0 +1,68 @@
+:root {
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+    --red-dark: rgb(155, 39, 28);
+    --red: rgb(255, 31, 49);
+    --orange-dark: rgb(212, 119, 33);
+    --orange: rgb(240, 141, 2);
+    --yellow-dark: rgb(255, 169, 10);
+    --yellow: rgb(255, 184, 51);
+    --green-dark: rgb(77, 179, 5);
+    --green: rgb(149, 250, 76);
+    --cyan: rgb(26, 214, 239);
+    --blue-dark: rgb(0, 79, 143);
+    --blue: rgb(31, 154, 255);
+    --indigo-dark: rgb(10, 6, 137);
+    --indigo: rgb(14, 8, 189);
+    --violet: rgb(207, 51, 255);
+    --violet-dark: rgb(125, 0, 163);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --dark-background: rgb(9, 9, 11);
+    --light-background: rgb(241, 243, 249);
+    --svgPortraitMargin: calc(var(--svgPortraitDiameter) / 10);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  scrollbar-width: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body > * {
+  flex: 0 1 auto;
+  font-family: var(--font-mono);
+}
+
+div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+div > * {
+  flex: 0 1 auto;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+}

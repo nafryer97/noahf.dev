@@ -1,0 +1,45 @@
+@media (orientation: portrait), (min-height: 769px) {
+  :root {
+    --personal-info-width: 98vw;
+    --personal-info-margin: auto;
+    --svg-portrait-diameter: calc(98vh / 3);
+    --svg-portrait-margin: calc(98vh / 60) 0;
+    --info-divs-width: 100%;
+    --info-divs-height: calc((98vh - ((98vh / 3) + (98vh / 30))) / 2);
+    --name-header-font-size: calc(var(--info-divs-height) * 0.44);
+    --name-header-margin: auto 0 0;
+    --social-info-flex-flow: row wrap;
+    --social-info-margin: 0 0 auto;
+    --logo-divs-margin: 0 auto auto;
+    --logo-side-length: calc(98vw / 4.5);
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 768px) {
+  :root {
+    --personal-info-width: 98vw;
+    --personal-info-margin: auto;
+    --svg-portrait-diameter: calc(98vw / 3);
+    --svg-portrait-margin: 0 calc(98vw / 60) 0 auto;
+    --info-divs-width: calc((98vw - ((98vw / 3) + (98vw / 30))) / 2);
+    --info-divs-height: 98vh;
+    --name-header-font-size: calc(var(--info-divs-height) * 0.18);
+    --name-header-margin: auto auto auto 0;
+    --social-info-flex-flow: column wrap;
+    --social-info-margin: 0 auto 0 0;
+    --logo-side-length: calc(98vh / 5);
+    --logo-divs-margin: calc(var(--logo-side-length) / 2) calc(var(--logo-side-length) / 2);
+  }
+
+  #personal-info {
+    flex-flow: row nowrap;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-height: 769px) and (min-width: 1025px) {
+  :root {
+    --personal-info-width: 40vw;
+    --personal-info-margin: auto auto auto 5%;
+    --logo-side-length: calc(40vw / 4.5);
+  }
+}

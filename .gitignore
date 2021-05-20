@@ -2,3 +2,4 @@
 node_modules
 .size-snapshot.json
 public/build
+*.pem

@@ -1,11 +1,14 @@
-import styles from './styles.css';
-import SVGMatrixGenerator from './matrixworker.js';
-import createInlineWorker from './createinlineworker.js';
-import {branchLen, initElementsFromWorkerData} from './fractaldomelements.js';
+import * as mediasizescss from './styles/media-sizes.css';
+import * as mediacolorschemes from './styles/media-colorschemes.css';
+import * as commoncss from './styles/common.css';
+import * as maincss from './main.css';
+import SVGMatrixGenerator from './scripts/matrixworker.js';
+import createInlineWorker from './scripts/createinlineworker.js';
+import {branchLen, initElementsFromWorkerData} from './scripts/fractaldomelements.js';
 
 (() => {
   'use strict';
-  const limit = 11;
+  const limit = 10;
 
   if (window.Worker) {
     const matrixWorker = createInlineWorker(SVGMatrixGenerator);
