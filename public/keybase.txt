@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/doespeqnp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://doespeqnp.dev
+  * I am doespeqnp (https://keybase.io/doespeqnp) on keybase.
+  * I have a public key ASBI5LfTz0vT9dWa5GPicQ9mT2GPanDkWiErC4Nj6A3eKgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012048e4b7d3cf4bd3f5d59ae463e2710f664f618f6a70e45a212b0b8363e80dde2a0a",
+      "host": "keybase.io",
+      "kid": "012048e4b7d3cf4bd3f5d59ae463e2710f664f618f6a70e45a212b0b8363e80dde2a0a",
+      "uid": "d03c06023fd76bc8706d9909778f1f19",
+      "username": "doespeqnp"
+    },
+    "merkle_root": {
+      "ctime": 1622086209,
+      "hash": "e8c1c95e7263e24fcf43b4181711102717107363d27b10e67398eaab20ce2a881b50cafbd4466431da2fcb2d7788370566c6d553afc226bd2ef3ea46b5d56b80",
+      "hash_meta": "87aa7b4836c09bdb640a888aeef6b1bb5705ffa03b086fe6c9b2b63c00d22841",
+      "seqno": 20052770
+    },
+    "service": {
+      "entropy": "UN1gLtvE1gm/QyvplDhzhcNg",
+      "hostname": "doespeqnp.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.2"
+  },
+  "ctime": 1622086234,
+  "expire_in": 504576000,
+  "prev": "93c46a84ab59b38974fd92ec87904cc0ced97676929a64e7fa6f1b49bbfbd1c7",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgSOS3089L0/XVmuRj4nEPZk9hj2pw5FohKwuDY+gN3ioKp3BheWxvYWTESpcCD8Qgk8RqhKtZs4l0/ZLsh5BMwM7ZdnaSmmTn+m8bSbv70cfEIOSdlyj1WHBWTtrMwjwfOX1qeyR90VyIrHrls040j0V3AgHCo3NpZ8RAR7QB2ozsJyOCpQZXuluTsIey1d2655ZrMWj/+s3avu9ejX92g45vFUautVdY+kHsIyImGy6ZQhvrwJTIwrB7AqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHHJKwoHjeZpwq7vXqyJrXl41dARDICac6Fe50oTXSmRo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/doespeqnp
+
+==================================================================
