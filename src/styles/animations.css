@@ -7,3 +7,30 @@
     opacity: 1;
   }
 }
+
+@keyframes colorTransition {
+  12.5% {
+    background-color: var(--red);
+  }
+  25% {
+    background-color: var(--orange);
+  }
+  37.5% {
+    background-color: var(--yellow);
+  }
+  50% {
+    background-color: var(--green);
+  }
+  62.5% {
+    background-color: var(--cyan);
+  }
+  75% {
+    background-color: var(--blue);
+  }
+  87.5% {
+    background-color: var(--violet);
+  }
+  100% {
+    background-color: var(--text-color);
+  }
+}

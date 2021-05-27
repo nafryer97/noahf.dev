@@ -1,6 +1,7 @@
 import * as mediasizescss from './styles/media-sizes.css';
 import * as mediacolorschemes from './styles/media-colorschemes.css';
 import * as commoncss from './styles/common.css';
+import * as animationcss from './styles/animations.css';
 import * as maincss from './main.css';
 import SVGMatrixGenerator from './scripts/matrixworker.js';
 import createInlineWorker from './scripts/createinlineworker.js';

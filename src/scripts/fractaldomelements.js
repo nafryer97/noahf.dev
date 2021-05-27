@@ -3,7 +3,7 @@ import anime from 'animejs/lib/anime.es.js';
 const svgns = 'http://www.w3.org/2000/svg';
 const scrWidth = window.screen.width;
 const scrHeight = window.screen.height;
-const branchLen = scrHeight / 10;
+const branchLen = Math.min(scrHeight, scrWidth) / 10;
 let branchCount = 1;
 
 function createAndAnimate(svgGroup, matrices, docFrag) {
@@ -65,8 +65,8 @@ function initElementsFromWorkerData(matrices) {
   const svg = document.createElementNS(svgns, 'svg');
   const treeGroup = document.createElementNS(svgns, 'g');
   svg.setAttributeNS(null, 'id', 'svg-bg-container');
-  svg.setAttributeNS(null, 'viewbox', `0 0 ${scrWidth} ${scrHeight}`);
-  svg.setAttributeNS(null, 'preserveaspectratio', 'xMinYMin meet');
+  svg.setAttributeNS(null, 'viewBox', `0 0 ${scrWidth} ${scrHeight}`);
+  svg.setAttributeNS(null, 'preserveAspectRatio', 'xMidYMid meet');
   treeGroup.setAttributeNS(null, 'id', 'treeGroup');
   treeGroup.setAttributeNS(
     null,

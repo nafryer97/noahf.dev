@@ -23,25 +23,28 @@
 
 #personal-info {
   width: var(--personal-info-width);
-  min-width: var(--svg-portrait-diameter);
   margin: var(--personal-info-margin);
-  height: 98vh;
+  height: 100vh;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 
 #name-header {
-  width: min-content;
-  height: var(--info-divs-height);
+  width: var(--name-header-width);
+  height: var(--name-header-height);
   margin: var(--name-header-margin);
   align-items: baseline;
 }
 
 #name-header > * {
-  height: 45%;
+  height: var(--name-divs-height);
   font-size: var(--name-header-font-size);
+  padding: 0 4%;
   color: var(--background-color);
-  background-color: var(--cyan);
+  background-color: var(--text-color);
+  border-radius: calc(var(--name-divs-height) / 10);
+  animation: colorTransition 12.5s infinite;
 }
 
 #noah {
@@ -60,8 +63,8 @@
 }
 
 #social-media-list {
-  width: var(--info-divs-width);
-  height: var(--info-divs-height);
+  width: var(--social-info-width);
+  height: var(--social-info-height);
   margin: var(--social-info-margin);
   flex-flow: var(--social-info-flex-flow);
   justify-content: center;
@@ -72,8 +75,6 @@
 .social-media-item {
   justify-content: space-between;
   align-items: center;
-  min-width: 36px;
-  min-height: calc(36px + 2rem);
   margin: var(--logo-divs-margin);
 }
 
@@ -83,18 +84,16 @@
 }
 
 .social-media-item object {
-  min-height: 36px;
   min-width: 36px;
-  max-height: 85px;
-  max-width: 85px;
+  min-height: 36px;
   height: var(--logo-side-length);
   width: var(--logo-side-length);
   margin: 0 auto 1rem;
 }
 
 .social-media-item a {
-  font-size: 1rem;
+  font-size: calc(var(--logo-side-length) / 5);
   color: var(--text-color);
   font-weight: bold;
-  margin: auto;
+  margin: auto auto 0;
 }
